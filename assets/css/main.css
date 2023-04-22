@@ -411,107 +411,6 @@ section {
 
 
 /*--------------------------------------------------------------
-# Fullscreen Hero Section
-
-
-.hero-fullscreen {
-    width: 100%;
-    min-height: 100vh;
-    background: url("../img/hero-fullscreen-bg.jpg") center center;
-    background-size: cover;
-    position: relative;
-    padding: 120px 0 60px;
-}
-
-.hero-fullscreen:before {
-    content: "";
-    background: rgba(var(--color-white-rgb), 0.85);
-    position: absolute;
-    inset: 0;
-}
-
-@media (min-width: 1365px) {
-    .hero-fullscreen {
-        background-attachment: fixed;
-    }
-}
-
-.hero-fullscreen h2 {
-    margin: 0 0 10px 0;
-    font-size: 48px;
-    font-weight: 300;
-    color: var(--color-secondary);
-    font-family: var(--font-secondary);
-}
-
-.hero-fullscreen h2 span {
-    color: var(--corDefault);
-}
-
-.hero-fullscreen p {
-    color: rgba(var(--color-secondary-rgb), 0.8);
-    margin: 0 0 30px 0;
-    font-size: 20px;
-    font-weight: 400;
-}
-
-.hero-fullscreen .btn-get-started {
-    font-size: 16px;
-    font-weight: 400;
-    display: inline-block;
-    padding: 10px 28px;
-    border-radius: 4px;
-    transition: 0.5s;
-    color: var(--color-white);
-    background: var(--corDefault);
-    font-family: var(--font-secondary);
-}
-
-.hero-fullscreen .btn-get-started:hover {
-    background: rgba(var(--corDefault-rgb), 0.8);
-}
-
-.hero-fullscreen .btn-watch-video {
-    font-size: 16px;
-    transition: 0.5s;
-    margin-left: 25px;
-    font-family: var(--font-secondary);
-    color: var(--color-secondary);
-    font-weight: 600;
-}
-
-.hero-fullscreen .btn-watch-video i {
-    color: var(--corDefault);
-    font-size: 32px;
-    transition: 0.3s;
-    line-height: 0;
-    margin-right: 8px;
-}
-
-.hero-fullscreen .btn-watch-video:hover {
-    color: var(--corDefault);
-}
-
-.hero-fullscreen .btn-watch-video:hover i {
-    color: rgba(var(--corDefault-rgb), 0.8);
-}
-
-@media (max-width: 640px) {
-    .hero-fullscreen h2 {
-        font-size: 32px;
-    }
-    .hero-fullscreen p {
-        font-size: 18px;
-        margin-bottom: 30px;
-    }
-    .hero-fullscreen .btn-get-started,
-    .hero-fullscreen .btn-watch-video {
-        font-size: 14px;
-    }
-}
-
-
-/*--------------------------------------------------------------
 # Featured Services Section
 --------------------------------------------------------------*/
 
@@ -561,6 +460,11 @@ section {
 .featured-services h2 {
     color: var(--corDefault);
     padding: 0 23px;
+}
+
+.service-item p span {
+    color: var(--corDefault);
+    font-weight: bold;
 }
 
 
@@ -710,4 +614,28 @@ section {
 .footer .footer-legal .social-links a:hover {
     background: var(--corDefault);
     text-decoration: none;
+}
+
+@media (max-width: 992px) {
+    .footer .footer-legal {
+        padding: 60px;
+    }
+}
+
+@media (max-width: 992px) {
+    .footer .footer-legal .social-links {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer .footer-legal .social-links {
+        text-align: center;
+    }
+}
+
+@media (min-width: 1054px) {
+    .footer .footer-legal .social-links {
+        text-align: center;
+    }
 }
