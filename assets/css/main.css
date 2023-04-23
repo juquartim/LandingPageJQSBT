@@ -479,7 +479,7 @@ section {
 
 .cta .container {
     padding: 80px;
-    background: #F5ECF6;
+    background: var(--corDefault);
     border-radius: 15px;
     opacity: 0.9;
 }
@@ -491,7 +491,7 @@ section {
 }
 
 .cta .content h3 {
-    color: var(--corTitle);
+    color: var(--white);
     font-size: 48px;
     font-weight: 700;
 }
@@ -508,13 +508,13 @@ section {
     right: 0;
     bottom: 10px;
     height: 10px;
-    background: var(--corDefault);
+    background: var(--white);
     z-index: -1;
     opacity: 0.6;
 }
 
 .cta .content p {
-    color: var(--corTitle);
+    color: var(--white);
     font-weight: 400;
     font-size: 18px;
 }
@@ -568,7 +568,7 @@ section {
 # Footer */
 
 .footer {
-    color: var(--white);
+    color: var(--corDefault);
     font-size: 14px;
     position: absolute;
     width: 100%;
@@ -577,7 +577,7 @@ section {
 
 .footer .footer-legal {
     padding: 30px 0;
-    background: var(--corSecondary);
+    background: var(--white);
 }
 
 
@@ -612,8 +612,13 @@ section {
 }
 
 .footer .footer-legal .social-links a:hover {
-    background: var(--corDefault);
+    background: var(--corHover1);
     text-decoration: none;
+}
+
+#copy {
+    font-weight: bold;
+    font-size: 14px;
 }
 
 @media (max-width: 992px) {
