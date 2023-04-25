@@ -106,7 +106,7 @@ section {
 .hero-animated h1 {
     margin: 0 0 10px 0;
     font-size: 58px;
-    font-weight: 300;
+    font-weight: 400;
     color: var(--corTitle);
     font-family: var(--font-default);
 }
