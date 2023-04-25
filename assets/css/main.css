@@ -165,36 +165,11 @@ section {
     transition: 0.5s;
     color: var(--color-white);
     background: var(--corDefault);
-    font-family: var(--font-secondary);
+    font-family: var(--fontDefault);
 }
 
 .hero-animated .btn-get-started:hover {
-    background: rgba(var(--corDefault-rgb), 0.8);
-}
-
-.hero-animated .btn-watch-video {
-    font-size: 16px;
-    transition: 0.5s;
-    margin-left: 25px;
-    font-family: var(--font-secondary);
-    color: var(--color-secondary);
-    font-weight: 600;
-}
-
-.hero-animated .btn-watch-video i {
-    color: var(--corDefault);
-    font-size: 32px;
-    transition: 0.3s;
-    line-height: 0;
-    margin-right: 8px;
-}
-
-.hero-animated .btn-watch-video:hover {
-    color: var(--corDefault);
-}
-
-.hero-animated .btn-watch-video:hover i {
-    color: rgba(var(--corDefault-rgb), 0.8);
+    background: var(--corHover1);
 }
 
 @media (max-width: 640px) {
@@ -206,9 +181,7 @@ section {
         margin-bottom: 30px;
     }
     .hero-animated .btn-get-started,
-    .hero-animated .btn-watch-video {
-        font-size: 14px;
-    }
+    font-size: 14px;
 }
 
 @keyframes up-down {
@@ -228,7 +201,7 @@ section {
 .hero {
     width: 100%;
     padding: 0;
-    background: var(--corVariacao1);
+    background: var(--white);
     background: url("../img/hero-bg.png") center center;
     background-size: cover;
     background-position: center;
@@ -268,6 +241,12 @@ section {
     line-height: 10px;
 }
 
+@media (max-width: 640px) {
+    .hero p {
+        line-height: normal;
+    }
+}
+
 .hero .img {
     margin-bottom: 40px;
     animation: fadeInDownLite 1s both;
@@ -293,127 +272,14 @@ section {
     border-color: var(--corHover1);
 }
 
-.hero .carousel-control-prev {
-    justify-content: start;
-}
-
-@media (min-width: 640px) {
-    .hero .carousel-control-prev {
-        padding-left: 15px;
-    }
-}
-
-.hero .carousel-control-next {
-    justify-content: end;
-}
-
-@media (min-width: 640px) {
-    .hero .carousel-control-next {
-        padding-right: 15px;
-    }
-}
-
-.hero .carousel-control-next-icon,
-.hero .carousel-control-prev-icon {
-    background: none;
-    font-size: 26px;
-    line-height: 0;
-    background: rgba(var(--color-secondary-rgb), 0.4);
-    color: rgba(var(--color-white-rgb), 0.98);
-    border-radius: 50px;
-    width: 54px;
-    height: 54px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.hero .carousel-control-next-icon {
-    padding-left: 3px;
-}
-
-.hero .carousel-control-prev-icon {
-    padding-right: 3px;
-}
-
-.hero .carousel-control-prev,
-.hero .carousel-control-next {
-    transition: 0.3s;
-}
-
-.hero .carousel-control-prev:focus,
-.hero .carousel-control-next:focus {
-    opacity: 0.5;
-}
-
-.hero .carousel-control-prev:hover,
-.hero .carousel-control-next:hover {
-    opacity: 0.9;
-}
-
-.hero .carousel-indicators li {
-    cursor: pointer;
-    background: rgba(var(--color-secondary-rgb), 0.5);
-    overflow: hidden;
-    border: 0;
-    width: 12px;
-    height: 12px;
-    border-radius: 50px;
-    opacity: 0.6;
-    transition: 0.3s;
-}
-
-.hero .carousel-indicators li.active {
-    opacity: 1;
-    background: var(--corDefault);
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translate3d(0, 100%, 0);
-    }
-    to {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
-}
-
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translate3d(0, -100%, 0);
-    }
-    to {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
-}
-
-@keyframes fadeInDownLite {
-    from {
-        opacity: 0;
-        transform: translate3d(0, -10%, 0);
-    }
-    to {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
-}
-
 
 /*--------------------------------------------------------------
 # Featured Services Section
 --------------------------------------------------------------*/
+
+.featured p {
+    font-family: var(--fontDefault);
+}
 
 .featured-services .service-item {
     padding: 30px;
@@ -445,7 +311,7 @@ section {
 
 .featured-services .service-item p {
     line-height: 24px;
-    font-size: 14px;
+    font-size: 18px;
     margin-bottom: 0;
 }
 
