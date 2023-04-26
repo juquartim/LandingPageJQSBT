@@ -437,22 +437,6 @@ section {
     background: var(--white);
 }
 
-
-/* .text-center {
-    text-align: right!important;
-} */
-
-
-/* .footer .footer-legal .credits {
-    padding-top: 4px;
-    font-size: 13px;
-    color: var(--color-white);
-}
-
-.footer .footer-legal .credits a {
-    color: var(--corDefault-light);
-} */
-
 .footer .footer-legal .social-links a {
     font-size: 18px;
     display: inline-block;
@@ -480,7 +464,7 @@ section {
 
 @media (max-width: 992px) {
     .footer .footer-legal {
-        padding: 60px;
+        padding: 10px;
     }
 }
 
